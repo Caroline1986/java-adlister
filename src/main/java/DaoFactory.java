@@ -7,4 +7,6 @@ public class DaoFactory {
         }
         return adsDao;
     }
+
+
 }

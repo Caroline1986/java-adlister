@@ -2,14 +2,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListAdsDao implements Ads {
-    private List<Ad> ads;
+    private List<Ad> ads = new ArrayList<>();
 
-    public List<Ad> all() {
-        if (ads == null) {
-            ads = generateAds();
-        }
-        return ads;
-    }
+    //***********************\\
+//    public List<Ad> all() {
+//        if (ads == null) {
+//            ads = generateAds();
+//        }
+//        return ads;
+//    }
 
     private List<Ad> generateAds() {
         List<Ad> ads = new ArrayList<>();
@@ -39,4 +40,16 @@ public class ListAdsDao implements Ads {
         ));
         return ads;
     }
+
+
+    ////// Did this instead\\\\\\\
+    public void insert(Ad ad) {
+        this.ads.add(ad);
+    }
+
+    @Override
+    public List<Ad> all() {
+        return this.generateAds();
+    }
 }
+
