@@ -1,7 +1,5 @@
 USE adlister_db;
 
-DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS ads;
 CREATE TABLE if not exists users
 (
     id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -23,4 +21,4 @@ CREATE TABLE IF NOT EXISTS ads
 
 );
 
-INSERT INTO users(username, email, password)VALUES ('donelle', 'donelle@codeup.com', 'password');
+INSERT INTO users(username, email, password)VALUES ('caroline', 'caroline@codeup.com', 'password');

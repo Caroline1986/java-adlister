@@ -1,5 +1,5 @@
 import java.sql.DriverManager;
-import com.mysql.jdbc.Driver;
+import com.mysql.cj.jdbc.Driver;
 
 
 import javax.servlet.jsp.jstl.core.Config;
