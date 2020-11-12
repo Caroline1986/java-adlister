@@ -1,5 +1,7 @@
 package com.codeup.adlister.models;
 
+
+
 public class User {
     private long id;
     private String username;
@@ -7,6 +9,12 @@ public class User {
     private String password;
 
     public User() {}
+
+    public User(String username, String email, String password) {//@servlet created this constructor to create a new user
+        this.username = username;
+        this.email = email;
+        setPassword(password);
+    }
 
     public User(long id, String username, String email, String password) {
         this.id = id;
